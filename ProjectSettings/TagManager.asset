@@ -11,11 +11,11 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Pickup
+  - Player
+  - Enemy
+  - PlayerProj
+  - EnemyProj
   - 
   - 
   - 
