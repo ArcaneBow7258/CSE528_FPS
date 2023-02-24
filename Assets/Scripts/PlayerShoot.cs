@@ -14,9 +14,14 @@ public class PlayerShoot : MonoBehaviour
     public float fireRate = 0.5f;
     public float lastFire;
     public bool spread = true;
-    public float damageMulti = 1;
-    private float damageBase= 1;
+    public float basicMulti = 1;
 
+
+
+    private float damageBase= 1;
+    public float[] cooldowns = {5f,5f,5f,5f};
+    public float[] coolCount = {0f,0f,0f,0f};
+    private float sharedCooldown = 0.5f;
 
     private Vector3 spreadVector = new Vector3(0.1f, 0.1f, 0.1f);
     public LayerMask mask;
@@ -31,7 +36,12 @@ public class PlayerShoot : MonoBehaviour
         laserLine.SetPosition(1,shootPoint.transform.position);
         animator = GetComponent<Animator>();
     }
-
+    public void Update(){
+        //Tick down cooldown
+        for(int i = 0; i < 4; i++){
+            coolCount[i] = Mathf.Clamp(coolCount[i] - Time.deltaTime,0,cooldowns[i]);
+        }
+    }
     public void OnFire(InputValue value){  
         //animator.SetBool("Shooting", true);
         //animator.SetFloat("FireRate",1/fireRate);
@@ -58,7 +68,7 @@ public class PlayerShoot : MonoBehaviour
                         laserLine.startWidth = .2f;
                         Life hitLife = hit.collider.GetComponent<Life>();
                         if(hitLife != null){
-                            hitLife.amount -= damageBase * damageMulti;
+                            hitLife.amount -= damageBase * basicMulti;
                             Debug.Log("hit");
                         }
                         
