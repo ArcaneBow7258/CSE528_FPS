@@ -14,22 +14,37 @@ public class PlayerShoot : MonoBehaviour
     public float fireRate = 0.5f;
     public float lastFire;
     public bool spread = true;
+    public float damageMulti = 1;
+    private float damageBase= 1;
+
+
     private Vector3 spreadVector = new Vector3(0.1f, 0.1f, 0.1f);
     public LayerMask mask;
     private LineRenderer laserLine;
+    private Animator animator;
 
     private Color hitColor = new Color(1,0,0,0.5f);
     private Color missColor = new Color(1,1,1,0.5f);
-    void Start(){
+    void Awake(){
         laserLine = GetComponent<LineRenderer>();
         laserLine.SetPosition(0,shootPoint.transform.position);
         laserLine.SetPosition(1,shootPoint.transform.position);
+        animator = GetComponent<Animator>();
     }
 
     public void OnFire(InputValue value){  
-        if(Time.time > lastFire +fireRate){
+        //animator.SetBool("Shooting", true);
+        //animator.SetFloat("FireRate",1/fireRate);
+        if(value.isPressed){
+            Shoot();
+        }
+        
+    }
+    public void Shoot(){
+        if(Time.timeScale >0 && Time.time >= lastFire + fireRate){
+            //print("pewpew"); 
             lastFire = Time.time;
-            print("pewpew"); 
+            
             if(hitScan){
                 laserLine.SetPosition(0,shootPoint.transform.position);
                 Ray cameraRay = cam.ScreenPointToRay(Input.mousePosition);
@@ -41,7 +56,12 @@ public class PlayerShoot : MonoBehaviour
                         laserLine.SetPosition(1,hit.point);
                         
                         laserLine.startWidth = .2f;
-                        Debug.Log("hit");
+                        Life hitLife = hit.collider.GetComponent<Life>();
+                        if(hitLife != null){
+                            hitLife.amount -= damageBase * damageMulti;
+                            Debug.Log("hit");
+                        }
+                        
 
                 }else{
                     //Debug.DrawLine(shootPoint.transform.position,cameraRay.GetPoint(range), Color.white);
@@ -66,11 +86,11 @@ public class PlayerShoot : MonoBehaviour
             
         }
             
-        
     }
     IEnumerator ShootLaser(){
         laserLine.enabled = true;
         yield return new WaitForSeconds(fireRate);
         laserLine.enabled = false;
+        //animator.SetBool("Shooting", false);
     }
 }

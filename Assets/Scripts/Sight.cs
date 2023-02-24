@@ -22,11 +22,13 @@ public class Sight : MonoBehaviour
                 collider.bounds.center - transform.position
             );
             float angleToCollider = Vector3.Angle(transform.forward, directionToController);
+            //Debug.Log(angleToCollider);
             if (angleToCollider < angle){
                 if(!Physics.Linecast(transform.position, collider.bounds.center, out RaycastHit hit, blockLayers))
                 {
                     Debug.DrawLine(transform.position, collider.bounds.center, Color.green);
                     detectedObject = collider;
+                    //Debug.Log("enemy found player");
                     break;
                 }else{
                     Debug.DrawLine(transform.position, hit.point, Color.red);

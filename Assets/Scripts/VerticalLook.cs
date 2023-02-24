@@ -11,6 +11,10 @@ public class VerticalLook : MonoBehaviour
     public void OnLook(InputValue value){
         upValue = value.Get<Vector2>().y;
     }
+    void Start(){
+        //transform.localRotation = Quaternion.Euler(0,0,0);
+
+    }
     // Update is called once per frame
     void Update()
     {

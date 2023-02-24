@@ -11,7 +11,7 @@ public class playerMovementNew : MonoBehaviour
     private int mouseLock = 1;
     private Vector2 movementValue;
     private float lookValue;
-
+    private Animator animator;
     
 
 
@@ -20,6 +20,7 @@ public class playerMovementNew : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
 
     }
     // Update is called once per frame
@@ -34,7 +35,7 @@ public class playerMovementNew : MonoBehaviour
     public void Update(){
         rb.AddRelativeForce(movementValue.x * Time.deltaTime, 0,movementValue.y * Time.deltaTime );
         rb.AddRelativeTorque(0,lookValue * Time.deltaTime,0);
-       
+        animator.SetFloat("Velocity",Mathf.Abs(movementValue.x * Time.deltaTime)+Mathf.Abs(movementValue.y * Time.deltaTime) );
 
         if(Input.GetKeyDown(KeyCode.T)){
             if(mouseLock ==1){

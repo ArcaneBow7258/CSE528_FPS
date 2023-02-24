@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class EnemyFSM : MonoBehaviour
 {
-    public enum EnemyState{GoToBase, AttackBase, ChasePlayer, AttackPlayer};
+    public enum EnemyState{Sit, Roam, ChasePlayer, AttackPlayer};
     public EnemyState currentState;
     public Sight sightSensor;
     
-    public Transform baseTransform;
-    public float baseAttackDistance;
 
     public float playerAttackDistance; 
 
@@ -19,32 +17,18 @@ public class EnemyFSM : MonoBehaviour
 
     private UnityEngine.AI.NavMeshAgent agent;
     private void Awake(){
-        baseTransform = GameObject.Find("BaseDamagePoint").transform;
         agent = GetComponentInParent<UnityEngine.AI.NavMeshAgent>();
     }
     void Update(){
-        if(currentState == EnemyState.GoToBase){GoToBase();}
-        else if (currentState == EnemyState.AttackBase){AttackBase();}
+        if (currentState == EnemyState.Sit){DoNothing();}
         else if (currentState == EnemyState.ChasePlayer){ChasePlayer();}
         else {AttackPlayer();}
     }
-    void GoToBase(){
-        agent.isStopped = false;
-        agent.SetDestination(baseTransform.position);
+    void DoNothing(){
         if(sightSensor.detectedObject != null){
             currentState = EnemyState.ChasePlayer;
+            return;
         }
-        float distanceToBase = Vector3.Distance(transform.position, baseTransform.position);
-        if (distanceToBase < baseAttackDistance){
-            currentState = EnemyState.AttackBase;
-        }
-        
-        
-    }
-    void AttackBase(){
-        agent.isStopped = true;
-        LookTo(baseTransform.position);
-        Shoot();
     }
     void ChasePlayer(){
         agent.isStopped = false;
@@ -63,10 +47,10 @@ public class EnemyFSM : MonoBehaviour
     void AttackPlayer(){
         agent.isStopped = true;
         if(sightSensor.detectedObject == null){
-            currentState = EnemyState.GoToBase;
+            currentState = EnemyState.ChasePlayer;
             return;
         }
-        LookTo(sightSensor.transform.position);
+        LookTo(sightSensor.detectedObject.transform.position);
         Shoot();
         float distanceToPlayer = Vector3.Distance(transform.position, sightSensor.detectedObject.transform.position);
         if (distanceToPlayer > playerAttackDistance * 1.1f){
