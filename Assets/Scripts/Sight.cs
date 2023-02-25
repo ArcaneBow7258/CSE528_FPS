@@ -7,7 +7,7 @@ public class Sight : MonoBehaviour
     public float angle;
     public LayerMask objectLayers;
     public LayerMask blockLayers;
-    public Collider detectedObject;
+    public GameObject detectedObject;
     // Start is called before the first frame update
   
     // Update is called once per frame
@@ -16,6 +16,7 @@ public class Sight : MonoBehaviour
         Collider[] colliders = Physics.OverlapSphere(
             transform.position, distance, objectLayers
         );
+        detectedObject = null;
         for (int i = 0; i < colliders.Length; i++){
             Collider collider = colliders[i];
             Vector3 directionToController = Vector3.Normalize(
@@ -27,16 +28,19 @@ public class Sight : MonoBehaviour
                 if(!Physics.Linecast(transform.position, collider.bounds.center, out RaycastHit hit, blockLayers))
                 {
                     Debug.DrawLine(transform.position, collider.bounds.center, Color.green);
-                    detectedObject = collider;
+                    detectedObject = collider.gameObject;
                     //Debug.Log("enemy found player");
                     break;
                 }else{
                     Debug.DrawLine(transform.position, hit.point, Color.red);
+                    //detectedObject = null;
                 }
             }
 
         }
-        void OnDrawGizmos(){
+        
+    }
+    public void OnDrawGizmos(){
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, distance);
 
@@ -45,5 +49,4 @@ public class Sight : MonoBehaviour
             Vector3 leftDirection= Quaternion.Euler(0, -angle, 0) * transform.forward;
             Gizmos.DrawRay(transform.position, leftDirection * distance);
         }
-    }
 }

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class LifeBar : MonoBehaviour
 {
     public Life targetLife;
+    public float timeOut;
     Image image;
     // Start is called before the first frame update
     void Awake()

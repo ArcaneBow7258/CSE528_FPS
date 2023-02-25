@@ -42,6 +42,27 @@ public class PlayerShoot : MonoBehaviour
             coolCount[i] = Mathf.Clamp(coolCount[i] - Time.deltaTime,0,cooldowns[i]);
         }
     }
+    public void OnA1(){
+        if(coolCount[0] == 0){
+            coolCount[0] = cooldowns[0];
+        }
+    }
+    public void OnA2(){
+        if(coolCount[1] == 0){
+            coolCount[1] = cooldowns[1];
+        }
+    }
+    public void OnA3(){
+        if(coolCount[2] == 0){
+            coolCount[2] = cooldowns[2];
+        }
+    }
+    public void OnA4(){
+        if(coolCount[3] == 0){
+            coolCount[3] = cooldowns[3];
+        }
+    }
+
     public void OnFire(InputValue value){  
         //animator.SetBool("Shooting", true);
         //animator.SetFloat("FireRate",1/fireRate);
