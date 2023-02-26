@@ -8,7 +8,7 @@ public class Mana : MonoBehaviour
     public float max;
     public float regen;
     // Start is called before the first frame update
-    void Wake()
+    void Awake()
     {
         amount = max;
     }

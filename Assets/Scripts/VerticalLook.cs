@@ -11,10 +11,7 @@ public class VerticalLook : MonoBehaviour
     public void OnLook(InputValue value){
         upValue = value.Get<Vector2>().y;
     }
-    void Start(){
-        //transform.localRotation = Quaternion.Euler(0,0,0);
-
-    }
+    
     // Update is called once per frame
     void Update()
     {
@@ -25,6 +22,8 @@ public class VerticalLook : MonoBehaviour
            rotation.x = maxAngle;
        }else if(rotation.x <= 360 - maxAngle && rotation.x > 180){
            rotation.x = -maxAngle;
+       }else if(Mathf.Abs(rotation.x) < 270 && Mathf.Abs(rotation.x) > 90){
+           rotation.x = 0;
        }
        //Debug.Log(rotation.x);
        transform.localRotation = Quaternion.Euler(rotation.x, rotation.y, rotation.z);

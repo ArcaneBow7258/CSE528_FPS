@@ -85,7 +85,7 @@ public class EnemyFSM : MonoBehaviour
         }
     }
     void LookTo(Vector3 targetPosition){
-        Debug.Log(transform.position);
+        //Debug.Log(transform.position);
         Vector3 directionToPosition = Vector3.Normalize(targetPosition - transform.position);
         directionToPosition.y = 0;
         transform.forward = directionToPosition;
