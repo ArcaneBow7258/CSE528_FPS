@@ -33,6 +33,7 @@ public class playerMovementNew : MonoBehaviour
     }
     
     public void Update(){
+        //Debug.Log(movementValue.y * Time.deltaTime);
         rb.AddRelativeForce(movementValue.x * Time.deltaTime, 0,movementValue.y * Time.deltaTime );
         rb.AddRelativeTorque(0,lookValue * Time.deltaTime,0);
         animator.SetFloat("Velocity",Mathf.Abs(movementValue.x * Time.deltaTime)+Mathf.Abs(movementValue.y * Time.deltaTime) );

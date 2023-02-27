@@ -15,7 +15,7 @@ public class TileGenerator : MonoBehaviour
     List<Cell> board;
     private class Cell{
         public bool visted = false;
-        public bool[] status = new bool[4];
+        public bool[] status = {false, false, false, false};
 
     }
     void Start(){
@@ -26,7 +26,9 @@ public class TileGenerator : MonoBehaviour
     void RoomGenerator(){
         for(int i = 0; i < size.x; i++){
             for(int j=0; j < size.y; j++){
-                Instantiate(room, new Vector3(i* offset.x+this.transform.position.x, 0, -j*offset.y + this.transform.position.y),Quaternion.identity, transform);
+                Cell currentCell = board[((int)(i +( j * size.x)))];
+                GameObject r = Instantiate(room, new Vector3(i* offset.x+this.transform.position.x, 0, -j*offset.y + this.transform.position.y),Quaternion.identity, transform);
+                r.GetComponent<RoomBehavior>().UpdateRoom(currentCell.status);
                 //update room
             }
 
@@ -61,20 +63,28 @@ public class TileGenerator : MonoBehaviour
 
                 if (newCell > currentCell){
                     if(newCell -1 == currentCell){
+                        board[currentCell].status[2] = true;
                         //set wall = true;
                         currentCell = newCell;
+                        board[currentCell].status[3] = true;
                         //set back wall is aslo true
                     }else{
                         //setwall = true
+                         board[currentCell].status[1] = true;
                         currentCell = newCell;
+                         board[currentCell].status[0] = true;
                     }   
                 }else{
                     if(newCell + 1 == currentCell){
                         //left
+                        board[currentCell].status[3] = true;
                         currentCell = newCell;
+                        board[currentCell].status[2] = true;
                         //right
                     }else{
+                        board[currentCell].status[0] = true;
                         currentCell = newCell;
+                        board[currentCell].status[1] = true;
                     }
                 }
             }
