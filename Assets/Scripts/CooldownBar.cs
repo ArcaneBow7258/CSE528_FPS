@@ -18,6 +18,6 @@ public class CooldownBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        image.fillAmount =  cooldown.coolCount[abilityNum] / cooldown.cooldowns[abilityNum];
+        image.fillAmount =  cooldown.abilities[abilityNum].coolCount / cooldown.abilities[abilityNum].cooldown;
     }
 }

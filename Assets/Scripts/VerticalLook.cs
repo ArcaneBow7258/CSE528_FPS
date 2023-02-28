@@ -16,14 +16,13 @@ public class VerticalLook : MonoBehaviour
     void Update()
     {
        rotation = transform.localEulerAngles;
-       //Debug.Log(upValue* -1 * lookSpeed * Time.deltaTime);
+       
        rotation.x += upValue* -1 * lookSpeed * Time.deltaTime;
+       //Debug.Log(rotation.x);
        if(rotation.x >= maxAngle && rotation.x < 180 ){
            rotation.x = maxAngle;
        }else if(rotation.x <= 360 - maxAngle && rotation.x > 180){
            rotation.x = -maxAngle;
-       }else if(Mathf.Abs(rotation.x) < 270 && Mathf.Abs(rotation.x) > 90){
-           rotation.x = 0;
        }
        //Debug.Log(rotation.x);
        transform.localRotation = Quaternion.Euler(rotation.x, rotation.y, rotation.z);

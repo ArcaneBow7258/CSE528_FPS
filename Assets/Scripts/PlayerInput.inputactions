@@ -51,9 +51,18 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "df457e58-19b9-42be-a249-0fb03c86c95c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "A1",
                     "type": "Button",
-                    "id": "f56aa9cc-aa74-47e9-878b-6016117a25ad",
+                    "id": "09f0be26-e780-402e-9899-19292ae18360",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -62,7 +71,7 @@
                 {
                     "name": "A2",
                     "type": "Button",
-                    "id": "4b05d0a6-2704-4a49-9533-20e02db9762c",
+                    "id": "a7a68889-2c65-4e02-8de8-7fc32beecff4",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -71,7 +80,7 @@
                 {
                     "name": "A3",
                     "type": "Button",
-                    "id": "db55faa3-71f1-4bca-a54f-2b80aefe7971",
+                    "id": "ee49dbd7-33b4-4872-aa23-758c96c22c8a",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -80,16 +89,7 @@
                 {
                     "name": "A4",
                     "type": "Button",
-                    "id": "6e93208a-880d-4eda-b609-9f8420628f85",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Pause",
-                    "type": "Button",
-                    "id": "df457e58-19b9-42be-a249-0fb03c86c95c",
+                    "id": "4ad858e3-7e24-4d45-b5b1-610072644a39",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -330,56 +330,12 @@
                 },
                 {
                     "name": "",
-                    "id": "3187bf44-aa40-4d05-b06e-80b2c167ba69",
-                    "path": "<Keyboard>/1",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "A1",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "5c2f2b03-4f2e-448b-9783-ea11e96d48f1",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Pause",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "1c5a1f3a-19f3-4c24-9339-18cb2ef36ce4",
-                    "path": "<Keyboard>/2",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "A2",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "5cb4adeb-7eaf-4233-8d63-639893128534",
-                    "path": "<Keyboard>/3",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "A3",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "7f00adcb-9289-4fcf-93e3-22a23941c7a0",
-                    "path": "<Keyboard>/4",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "A4",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -402,6 +358,50 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse;Touch",
                     "action": "VerticalLook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3187bf44-aa40-4d05-b06e-80b2c167ba69",
+                    "path": "<Keyboard>/#(1)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "A1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3d0456af-4581-4968-87a9-7df758e928de",
+                    "path": "<Keyboard>/#(4)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "A4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "40406386-23bb-4d8f-a06e-4ac39c9d656c",
+                    "path": "<Keyboard>/#(3)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "A3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4d8e8719-7bd2-4306-92fa-e5156b0e03a7",
+                    "path": "<Keyboard>/#(2)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "A2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
