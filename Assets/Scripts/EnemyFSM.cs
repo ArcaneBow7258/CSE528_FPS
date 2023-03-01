@@ -12,9 +12,10 @@ public class EnemyFSM : MonoBehaviour
     public float playerAttackDistance; 
 
     public GameObject bullet;
-    public int fireRate;
+    public float damage;
+    public float fireRate;
     public float lastShootTime;
-
+    public GameObject shootpoint;
     private UnityEngine.AI.NavMeshAgent agent;
 
 
@@ -58,6 +59,7 @@ public class EnemyFSM : MonoBehaviour
         float distanceToPlayer = Vector3.Distance(transform.position, sightSensor.detectedObject.transform.position);
         if (distanceToPlayer < playerAttackDistance){
             currentState = EnemyState.AttackPlayer;
+            lastShootTime = Time.time; //finish animation before attacking, not on contact.
         }
         
     }
@@ -73,6 +75,17 @@ public class EnemyFSM : MonoBehaviour
         float distanceToPlayer = Vector3.Distance(transform.position, sightSensor.detectedObject.transform.position);
         if (distanceToPlayer > playerAttackDistance * 1.1f){
             currentState = EnemyState.ChasePlayer;
+        }else{
+            if(Time.time > lastShootTime + fireRate){
+                lastShootTime = Time.time;
+                if(bullet != null && shootpoint != null){
+                    GameObject b = Instantiate(bullet, shootpoint.transform);
+                    b.transform.LookAt(sightSensor.detectedObject.transform.position + Vector3.up*1);
+                    b.GetComponent<ContactDamage>().damage = damage;
+                }else{
+                    sightSensor.detectedObject.GetComponent<Life>().amount -= damage;
+                }
+            }
         }
 
 

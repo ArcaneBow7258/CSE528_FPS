@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -12,13 +13,13 @@ public class PlayerShoot : MonoBehaviour
     public Mana mana;
     // Update is called once per frame
     public float range = 5;
-    public float fireRate = 0.5f;
+    public float fireRate = 1f;
     public float lastFire;
     public bool spread = true;
     public float basicMulti = 1;
     public LayerMask mask;
 
-    
+    internal Dictionary<Status, float> statuses = new Dictionary<Status, float>();
     private float damageBase= 1;
     public Ability[] abilities =  new Ability[4];//{new Explosion(), new Blank(), new Blank(), new Dash()};
     private float sharedCooldown = 0.5f;
@@ -38,8 +39,8 @@ public class PlayerShoot : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         abilities[0] = new Explosion();
-        abilities[1] = new Explosion();
-        abilities[2] = new PoisonCloud();
+        abilities[1] = new PoisonCloud();
+        abilities[2] = new Accelerate();
         abilities[3] = new Dash();
 
 
@@ -47,9 +48,19 @@ public class PlayerShoot : MonoBehaviour
     }
     public void Update(){
         //Tick down cooldown
-        for(int i = 0; i < 4; i++){
+        for(int i = 0; i < abilities.Length; i++){
            abilities[i].coolCount = Mathf.Clamp(abilities[i].coolCount - Time.deltaTime,0,abilities[i].cooldown);
         }
+       
+        foreach(var s in  statuses.Keys.ToList()){
+            if(s.trigger(Time.deltaTime)){
+                //Debug.Log("remove");
+                s.end();
+                statuses.Remove(s);
+            }
+
+        }
+        
     }
     public void OnA1(){
         if(abilities[0].CanCast(ref mana.amount)){
@@ -89,7 +100,7 @@ public class PlayerShoot : MonoBehaviour
         
     }
     public void Shoot(){
-        if(Time.timeScale >0 && Time.time >= lastFire + fireRate){
+        if(Time.timeScale >0 && Time.time >= lastFire + 1f /fireRate){
             //print("pewpew"); 
             lastFire = Time.time;
             
@@ -137,108 +148,10 @@ public class PlayerShoot : MonoBehaviour
     }
     IEnumerator ShootLaser(){
         laserLine.enabled = true;
-        yield return new WaitForSeconds(fireRate);
+        yield return new WaitForSeconds(1f/fireRate);
         laserLine.enabled = false;
         //animator.SetBool("Shooting", false);
     }
 }
 
 
-public abstract class Ability {
-    public float cooldown;
-    public float manaCost;
-    public float coolCount = 0;
-    public float damageBase;
-    public float aoe;
-    public float range;
-    public float duration;
-    public GameObject effect;
-    public abstract void Activate(PlayerShoot original);
-    public bool CanCast(ref float amount){
-        if(amount >= manaCost && coolCount == 0){
-            coolCount = cooldown;
-            amount -= manaCost;
-            return true;
-        }else{
-            return false;
-        }
-    }
-
-}
-public class Blank : Ability{
-    public Blank(){
-        manaCost = 0f;
-        cooldown = 0f;
-    }
-    public override void Activate(PlayerShoot original)
-    {
-        return;
-    }
-}
-public class Explosion : Ability {
-    public Explosion(){
-        cooldown = 5f;
-        manaCost = 2f;
-        damageBase = 3f;
-        range = 2f;
-        aoe = 1f;
-        
-        effect = Resources.Load<GameObject>("Explosion");
-    }
-    public override void Activate(PlayerShoot original){
-        Ray cameraRay = original.cam.ScreenPointToRay(Input.mousePosition);
-        Vector3 point = cameraRay.GetPoint(range);
-        if(Physics.Linecast(original.shootPoint.transform.position, point, out RaycastHit hit, original.mask)){
-            point=hit.point; 
-        }
-            PlayerShoot.Instantiate(effect, point, new Quaternion(0,0,0,0));
-            Collider[] hits = Physics.OverlapSphere(point,2,original.mask);
-            for(int i = 0; i<hits.Length; i++){
-                Life hitLife = hits[i].GetComponent<Life>();
-                if(hitLife != null){
-                            hitLife.amount -= damageBase;
-                }
-            }
-    }
-
-}
-public class PoisonCloud : Ability{
-    DOT dot;
-    public PoisonCloud(){
-        cooldown = 10f;
-        manaCost = 5f;
-        damageBase = 1f;
-        range = 3f;
-        aoe = 2f;
-        duration = 5f;
-        effect = Resources.Load<GameObject>("Poison");
-        dot = effect.GetComponent<DOT>();
-        dot.radius = aoe;
-        dot.dps = damageBase;
-        dot.duration = duration;
-        
-    }
-    public override void Activate(PlayerShoot original)
-    {
-        Ray cameraRay = original.cam.ScreenPointToRay(Input.mousePosition);
-        Vector3 point = cameraRay.GetPoint(range);
-        if(Physics.Linecast(original.shootPoint.transform.position, point, out RaycastHit hit, original.mask)){
-            point=hit.point; 
-        }  
-        dot.mask = original.mask;
-        PlayerShoot.Instantiate(effect, point, new Quaternion(0,0,0,0));                                    
-    }
-}
-
-
-
-public class Dash : Ability {
-    public Dash(){
-        cooldown = 1f;
-        manaCost = 3f;
-    }
-    public override void Activate(PlayerShoot original)
-    {
-        original.rb.AddRelativeForce(original.movementValue.x*200,0,original.movementValue.y*200 );
-    }
-}
