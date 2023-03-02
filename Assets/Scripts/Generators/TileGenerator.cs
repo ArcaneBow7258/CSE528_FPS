@@ -4,19 +4,29 @@ using UnityEngine;
 
 public class TileGenerator : MonoBehaviour
 {
-    public GameObject room;
+    
     public Vector2 offset;
 
     public Vector2 size;
     public int startPos = 0;
-    public int iterations = 1000;
-    
-
+    public int iterations = 10;
+    public GameObject[] rooms;
+    public float[] chances;
+    private SortedList<float, GameObject> roomies = new SortedList<float, GameObject>(); // relative weights please
+    private float totalChance = 0;
     List<Cell> board;
     private class Cell{
         public bool visted = false;
         public bool[] status = {false, false, false, false};
 
+    }
+    void Awake(){
+        if(rooms.Length != chances.Length){
+            throw new UnityException("You do not have a room for every chance or a chance for each room");
+        }else{
+            for(int i = 0; i < rooms.Length; i++)
+            roomies.Add(chances[i],rooms[i]);
+        }
     }
     void Start(){
         GridGenerator();
@@ -24,9 +34,26 @@ public class TileGenerator : MonoBehaviour
 
 
     void RoomGenerator(){
+        foreach(var k in roomies.Keys){
+            totalChance += k;
+        }
+
         for(int i = 0; i < size.x; i++){
             for(int j=0; j < size.y; j++){
                 Cell currentCell = board[((int)(i +( j * size.x)))];
+                float random = Random.Range(0,totalChance);
+                Debug.Log("Init random " + random);
+                GameObject room = null;
+                foreach(var entry in roomies){
+                    if(random <= entry.Key){
+                        room = entry.Value;
+                        break;
+                    }else{
+                        random -= entry.Key;
+                        Debug.Log("next random" + totalChance);
+                    }
+                }
+
                 GameObject r = Instantiate(room, new Vector3(i* offset.x+this.transform.position.x, 0, -j*offset.y + this.transform.position.y),Quaternion.identity, transform);
                 r.GetComponent<RoomBehavior>().UpdateRoom(currentCell.status);
                 //update room
