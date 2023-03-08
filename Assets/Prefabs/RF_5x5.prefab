@@ -224,6 +224,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4666129526227067881}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: b396891bb665b904db8205eef1ed309f,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -307,6 +313,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8390811011740281501}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: e4c5f42dd1d62a5468379a4d27ebeb34,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -320,7 +332,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -367,7 +379,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -386,6 +399,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3114441341039008801}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 5a4590a64b3861c4aba562d5a3d0e589,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -399,7 +418,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -446,7 +465,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -465,6 +485,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8275772503777202601}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: bdced547bebbc5343b57eb9c7a1b2d7c,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -478,7 +504,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -525,7 +551,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -544,6 +571,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1634527562682089712}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: d4de555b1f92ce546b1f5230bb1bc0f4,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -627,6 +660,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1989640031482719185}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 59c4bdfda3651e6429b8317703b5cb8b,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -640,7 +679,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -687,7 +726,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -706,6 +746,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1634527562682089712}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: fd831f9a2b5929e4dbfeecd1774b79ae,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -789,6 +835,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1268162911860859634}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 3b84dccaf9e80ce4f9419a856f6e69c5,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -872,6 +924,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1804993399224136706}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: e4d0d0fbdfd48234da573089e812d5c1,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -955,6 +1013,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6337810697111285605}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: f71650043bb7b1f499ea1a41c5d76f0b,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -968,7 +1032,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -1015,7 +1079,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1034,6 +1099,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6082050651041373790}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: bd96075b375e3d54a9f5437f2519cd04,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -1047,7 +1118,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -1094,7 +1165,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1113,6 +1185,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 77461223449905718}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: b88e9fae51bb09f419f8b9a52cace343,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -1126,7 +1204,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -1173,7 +1251,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1192,6 +1271,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9100636801215426929}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: b5a17029eadece34e99eb5b79d28caac,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -1205,7 +1290,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -1252,7 +1337,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1271,6 +1357,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4666129526227067881}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: ad2cc70c39dbf8a42b3f9a71fa5ce38a,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -1354,6 +1446,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4666129526227067881}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 58bcf28ed2e472f468e766fd14959233,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -1437,6 +1535,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1634527562682089712}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 0345efdefdca2b94698fba49365b9e78,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -1520,6 +1624,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2930946850657305980}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 493287454cd0ae4468baefca92e4e561,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -1603,6 +1713,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4945895180732727352}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 03d54144c8fb3684c8f5b7ee30c22339,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -1616,7 +1732,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -1663,7 +1779,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1682,6 +1799,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3630399262457718264}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 9c52ecbd19a840547b26b055b3cf23c8,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -1695,7 +1818,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -1742,7 +1865,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1761,6 +1885,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3905370015910976361}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 5ca01a89b4960c143a4a0cf1bfaa55bb,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -1774,7 +1904,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -1821,7 +1951,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1840,6 +1971,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3320201236681570802}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 1ca056cc8f0d31840a35698657688ee7,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -1853,7 +1990,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -1900,7 +2037,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1919,6 +2057,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4666129526227067881}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 897591b20cab19e4ea3a927814133d95,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -2002,6 +2146,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1804993399224136706}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 1f61123ca633443479845aee2e6283bb,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -2085,6 +2235,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8268548935019246897}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 78f6eaa7824dd9a40b2eac480a09bac8,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -2098,7 +2254,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -2145,7 +2301,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2164,6 +2321,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1268162911860859634}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: e0c7a8e6d83c96e4abd9029f986765bb,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -2247,6 +2410,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4666129526227067881}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 19ca0795d712d204aa04bc7d1bbd7d59,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -2330,6 +2499,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1541393923462868795}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 87dbad9bfc435ce4db98455e25d3a8fc,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -2343,7 +2518,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -2390,7 +2565,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2409,6 +2585,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2930946850657305980}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 5bc456b3bd3c2e1479d6c4ba1fd4d945,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -2492,6 +2674,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1634527562682089712}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 6bda5ade944f49046b510e7daa6bcc74,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -2575,6 +2763,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4195424721570489951}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: c357b0587dbd97144aa73291ca16e968,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -2588,7 +2782,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -2635,7 +2829,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2654,6 +2849,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5510822206524488179}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 453b46c074f0eff49bf91c9791d72a2a,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -2667,7 +2868,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -2714,7 +2915,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2733,6 +2935,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1804993399224136706}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: b53ee5215bc0a1344bcaf93024c7bfee,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -2816,6 +3024,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 889599867079647911}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: f4a402ffdb11a72429e694004207270a,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -2829,7 +3043,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -2876,7 +3090,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2895,6 +3110,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3002813087651791054}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: bb999644e08beb24f97e201d073477fa,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -2908,7 +3129,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -2955,7 +3176,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2974,6 +3196,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3718026331035924189}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 4ff210d99f66d5a429d2e455b0b007eb,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -2987,7 +3215,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -3034,7 +3262,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3053,6 +3282,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3845323951165598192}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 8ea0043cefb0f5c49811f907ecc19ad1,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -3066,7 +3301,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -3113,7 +3348,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3132,6 +3368,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1804993399224136706}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: f9b9f8ad85f2a814485e3e0e160083e1,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -3215,6 +3457,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1634527562682089712}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: e79b3c66f192d90429ae2370b3a4e43f,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -3298,6 +3546,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2930946850657305980}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: f071566897a6b5b42b8f00bb657e6c40,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -3381,6 +3635,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3352491453270762095}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 48c9b66c1201bac4c814d72e72c251a0,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -3394,7 +3654,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -3441,7 +3701,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3460,6 +3721,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6342777664951921765}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: cefecf6471d1ada44bdf454dc22a74f4,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -3473,7 +3740,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -3520,7 +3787,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3539,6 +3807,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2412447132855866228}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: a59a545bac03e4844a4a38d6d4a1d1ee,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -3552,7 +3826,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -3599,7 +3873,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3618,6 +3893,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1268162911860859634}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 688355ed950a24a4982af9a4139953c8,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -3701,6 +3982,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1268162911860859634}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 1ab4a573698c31245bd8a97a3065af7c,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -3784,6 +4071,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1804993399224136706}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 40ec8901499dca04780217ba33b9242c,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -3867,6 +4160,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2930946850657305980}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 0d651470597391245aaa52d4e4d9d267,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -3950,6 +4249,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1924882350950021738}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: facd41ad9ac9dd548afcb2f9a70d6181,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -3963,7 +4268,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -4010,7 +4315,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4029,6 +4335,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1268162911860859634}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 3b1fa29cbcd10bc4d9e4c36906edce32,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -4112,6 +4424,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2930946850657305980}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 879422035447cfe488de08009fc71ac0,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -4195,6 +4513,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1462693447349755826}
     m_Modifications:
+    - target: {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: d78c111523ac93d4aaf5777e606d9108,
+        type: 2}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -4208,7 +4532,7 @@ PrefabInstance:
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
@@ -4255,7 +4579,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roof
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

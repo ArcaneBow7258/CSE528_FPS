@@ -903,7 +903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5db31a522894f504f83a918194a3696f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUp: {fileID: 2226401690598520841, guid: e0a45c2fff36e2f4782844598cb859fb, type: 3}
+  powerUp: {fileID: 4948559908921797786, guid: 83fdedbd652d3e84898e9637a6848a09, type: 3}
 --- !u!114 &2146237850
 MonoBehaviour:
   m_ObjectHideFlags: 0

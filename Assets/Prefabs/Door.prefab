@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1528194368290899571}
   - component: {fileID: 3413210611660581771}
   - component: {fileID: 1341992188302690592}
+  - component: {fileID: 2548806217571575069}
+  - component: {fileID: 2595339514495278375}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -117,3 +119,40 @@ MonoBehaviour:
   particles: {fileID: 2929409475279430531, guid: 5f7afe9f07b538f46ba7bd9385de111a,
     type: 3}
   yOffset: 0
+--- !u!208 &2548806217571575069
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416386656469751746}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.70400006, y: 1.148, z: 0.148}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.148, z: 0.028}
+  m_TimeToStationary: 0.5
+--- !u!65 &2595339514495278375
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416386656469751746}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4080145, y: 2.2950897, z: 0.29553434}
+  m_Center: {x: 0, y: 1.1481464, z: 0.028115734}

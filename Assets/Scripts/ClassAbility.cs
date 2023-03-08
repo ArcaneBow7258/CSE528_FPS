@@ -54,7 +54,7 @@ public class Explosion : Ability {
             for(int i = 0; i<hits.Length; i++){
                 Life hitLife = hits[i].GetComponent<Life>();
                 if(hitLife != null){
-                            hitLife.amount -= damageBase;
+                            hitLife.amount -= damageBase * original.basicMulti;
                 }
             }
     }
@@ -84,7 +84,7 @@ public class PoisonCloud : Ability{
             point=hit.point; 
         }  
         dot.mask = original.mask;
-        PlayerShoot.Instantiate(effect, point, new Quaternion(0,0,0,0));                                    
+        PlayerShoot.Instantiate(effect, point, new Quaternion(0,0,0,0)).GetComponent<DOT>().dps *= original.basicMulti;                                    
     }
 }
 

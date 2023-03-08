@@ -10,8 +10,15 @@ public class RoomBehavior : MonoBehaviour
 {
     public GameObject[] walls; // 0 - Up 1 -Down 2 - Right 3- Left
     public GameObject[] doors;
-    public GameObject[] obstacles;
+    public GameObject[] spawned;
     public GameObject[] spawnPoints;
+    public float[] chances;
+    public float noChance;
+    private weightedRNG roomgen;
+    void Awake(){
+        roomgen = new weightedRNG(chances, spawned);
+        roomgen.Add(noChance, null);
+    }
     public void UpdateRoom(RoomStatus stat)
     {
         bool access = false;
@@ -23,6 +30,13 @@ public class RoomBehavior : MonoBehaviour
         }
         if(!access){
             Destroy(gameObject);
+        }
+        foreach(var sp in spawnPoints){
+            GameObject spawned = roomgen.gen();
+            if(spawned != null){
+                Instantiate(spawned, sp.transform);
+            }
+            
         }
     }
 }
