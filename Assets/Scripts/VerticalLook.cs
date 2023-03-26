@@ -15,6 +15,9 @@ public class VerticalLook : MonoBehaviour
         rotation.x =0;
     }
     // Update is called once per frame
+    public void ResetCamera(){
+        transform.localRotation = Quaternion.Euler(0,0,0);
+    }
     void Update()
     {
        rotation = transform.localEulerAngles;

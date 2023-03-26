@@ -56,7 +56,7 @@
                     "id": "df457e58-19b9-42be-a249-0fb03c86c95c",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
                     "initialStateCheck": false
                 },
                 {
@@ -331,7 +331,7 @@
                 {
                     "name": "",
                     "id": "5c2f2b03-4f2e-448b-9783-ea11e96d48f1",
-                    "path": "<Keyboard>/escape",
+                    "path": "<Keyboard>/p",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",

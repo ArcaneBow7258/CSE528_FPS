@@ -38,19 +38,6 @@ public class playerMovementNew : MonoBehaviour
         rb.AddRelativeTorque(0,lookValue * Time.deltaTime,0);
         animator.SetFloat("Velocity",Mathf.Abs(movementValue.x * Time.deltaTime)+Mathf.Abs(movementValue.y * Time.deltaTime) );
 
-        if(Input.GetKeyDown(KeyCode.T)){
-            if(mouseLock ==1){
-                Cursor.visible = true;
-                Cursor.lockState = CursorLockMode.None;
-                mouseLock = (mouseLock + 1 )%2;
-            }else{
-                Cursor.visible = false;
-                Cursor.lockState = CursorLockMode.Locked;
-                mouseLock += 1;
-
-            }
-
-        };
     }
     
 }
