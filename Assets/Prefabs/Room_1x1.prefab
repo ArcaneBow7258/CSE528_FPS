@@ -1916,6 +1916,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 23800000, guid: 744fb1572ea93284b8560c82bfba150a,
         type: 2}
+    - target: {fileID: 4098839598010099669, guid: e348e7143b6247b488737e4be26fb038,
+        type: 3}
+      propertyPath: surface
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5239272197777735519, guid: e348e7143b6247b488737e4be26fb038,
         type: 3}
       propertyPath: m_RootOrder
@@ -1978,6 +1983,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3776246430306790410, guid: e348e7143b6247b488737e4be26fb038, type: 3}
+    - {fileID: 4098839598010099669, guid: e348e7143b6247b488737e4be26fb038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

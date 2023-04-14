@@ -51,7 +51,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Pause",
+                    "name": "Stop",
                     "type": "Button",
                     "id": "df457e58-19b9-42be-a249-0fb03c86c95c",
                     "expectedControlType": "Button",
@@ -335,7 +335,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Pause",
+                    "action": "Stop",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

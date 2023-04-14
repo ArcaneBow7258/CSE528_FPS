@@ -464,7 +464,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1791542207}
         m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -635,7 +635,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1791542204}
+      - m_Target: {fileID: 1791542206}
         m_TargetAssemblyTypeName: VerticalLook, Assembly-CSharp
         m_MethodName: ResetCamera
         m_Mode: 1
@@ -953,7 +953,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1791542203}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1791542205}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1be61e9cc842ab4cb8dfbb5cead27a7, type: 3}
@@ -965,7 +965,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1791542203}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1791542205}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826545ed78e3368468a2b5233230958d, type: 3}
@@ -977,7 +977,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1791542203}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1791542205}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e02828b9607d4584eb789b4b42c23876, type: 3}
@@ -1382,15 +1382,7 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1646651980}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5440671515081816075, guid: 4dda864caba250641984d7cd2d399661,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1962176958}
-    - targetCorrespondingSourceObject: {fileID: 5440671515081816075, guid: 4dda864caba250641984d7cd2d399661,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1962176957}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4dda864caba250641984d7cd2d399661, type: 3}
 --- !u!224 &1482109344 stripped
 RectTransform:
@@ -1767,82 +1759,75 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8325810457729393749, guid: f64cded43335e384dab0279ac8e473b4,
+        type: 3}
+      propertyPath: fireRate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8326970674791159707, guid: f64cded43335e384dab0279ac8e473b4,
         type: 3}
       propertyPath: m_Name
-      value: PlayerModel Variant
+      value: PlayerCharacter
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8325810458034496581, guid: f64cded43335e384dab0279ac8e473b4, type: 3}
+    - {fileID: 8325810458034496580, guid: f64cded43335e384dab0279ac8e473b4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8324028300141858179, guid: f64cded43335e384dab0279ac8e473b4,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1369391226}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8326970674791159707, guid: f64cded43335e384dab0279ac8e473b4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1791542206}
+    - targetCorrespondingSourceObject: {fileID: 8326970674791159707, guid: f64cded43335e384dab0279ac8e473b4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1791542207}
   m_SourcePrefab: {fileID: 100100000, guid: f64cded43335e384dab0279ac8e473b4, type: 3}
---- !u!114 &1791542204 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8325810458034496581, guid: f64cded43335e384dab0279ac8e473b4,
+--- !u!20 &1791542204 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8325810458034496586, guid: f64cded43335e384dab0279ac8e473b4,
     type: 3}
   m_PrefabInstance: {fileID: 1791542203}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7535ff9cc424d3c409a144aadd290ae9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1962176953 stripped
+--- !u!1 &1791542205 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 5440671515081816075, guid: 4dda864caba250641984d7cd2d399661,
+  m_CorrespondingSourceObject: {fileID: 8326970674791159707, guid: f64cded43335e384dab0279ac8e473b4,
     type: 3}
-  m_PrefabInstance: {fileID: 1482109343}
+  m_PrefabInstance: {fileID: 1791542203}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1962176957
+--- !u!114 &1791542206
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1962176953}
+  m_GameObject: {fileID: 1791542205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7535ff9cc424d3c409a144aadd290ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookSpeed: 50
+  cam: {fileID: 1791542204}
+  maxAngle: 70
+--- !u!114 &1791542207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791542205}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 399f4e202ed4ec342a2106ff8b6957eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1646651979}
---- !u!114 &1962176958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1962176953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: a3c89c1d3c841e743a99c1b8a624077f,
-    type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: UI
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1 &2049093485
 GameObject:
   m_ObjectHideFlags: 0

@@ -934,8 +934,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1be61e9cc842ab4cb8dfbb5cead27a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 10
-  max: 10
+  amount: 5
+  max: 5
   onDeath:
     m_PersistentCalls:
       m_Calls: []
@@ -953,7 +953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   sightSensor: {fileID: 1059158982}
-  playerAttackDistance: 0.5
+  playerAttackDistance: 1
   bullet: {fileID: 0}
   damage: 5
   fireRate: 1
@@ -971,8 +971,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 296f06cb77d11144586ea788155761df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 5
-  angle: 45
+  distance: 7.5
+  angle: 135
   objectLayers:
     serializedVersion: 2
     m_Bits: 128
@@ -1062,7 +1062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 5
-  angle: 45
+  angle: 90
   objectLayers:
     serializedVersion: 2
     m_Bits: 128
@@ -1596,4 +1596,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb5b4869da8c35947b1be48c90240eaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 8326970674791159707, guid: f64cded43335e384dab0279ac8e473b4, type: 3}
+  target: PlayerCharacter

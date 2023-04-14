@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Unity.AI.Navigation;
 public class TileGenerator : MonoBehaviour
 {
     
@@ -24,6 +24,7 @@ public class TileGenerator : MonoBehaviour
     }
     void Start(){
         GridGenerator();
+        GameObject.Find("Floor").GetComponent<NavMeshSurface>().BuildNavMesh();
     }
 
 

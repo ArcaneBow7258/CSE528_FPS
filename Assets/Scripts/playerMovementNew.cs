@@ -8,7 +8,7 @@ public class playerMovementNew : MonoBehaviour
     private Rigidbody rb;
     public float speed;
     public float rotationSpeed;
-    private int mouseLock = 1;
+    //private int mouseLock = 1;
     private Vector2 movementValue;
     private float lookValue;
     private Animator animator;

@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 public class VerticalLook : MonoBehaviour
 {
     public float lookSpeed;
+    public Camera cam;
     public float maxAngle;
     private float upValue;
     private Vector3 rotation;
@@ -16,11 +17,11 @@ public class VerticalLook : MonoBehaviour
     }
     // Update is called once per frame
     public void ResetCamera(){
-        transform.localRotation = Quaternion.Euler(0,0,0);
+        cam.transform.localRotation = Quaternion.Euler(0,0,0);
     }
     void Update()
     {
-       rotation = transform.localEulerAngles;
+       rotation = cam.transform.localEulerAngles;
        
        rotation.x += upValue* -1 * lookSpeed * Time.deltaTime;
        //Debug.Log(rotation.x);
@@ -32,6 +33,6 @@ public class VerticalLook : MonoBehaviour
             rotation.x = 0;
        }
        //Debug.Log(rotation.x);
-       transform.localRotation = Quaternion.Euler(rotation.x, rotation.y, rotation.z);
+       cam.transform.localRotation = Quaternion.Euler(rotation.x, rotation.y, rotation.z);
     }
 }
